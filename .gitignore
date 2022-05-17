@@ -1,0 +1,8 @@
+_assets/
+_package/
+_OLD/
+.DS_Store
+.brackets.json
+*.psd
+*.zip
+*.config
