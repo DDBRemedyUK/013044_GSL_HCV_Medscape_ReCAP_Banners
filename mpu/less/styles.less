@@ -1,3 +1,7 @@
+//variables
+@padding: 10px;
+@paddingbottom: 5px;
+
 html {
     width: 100%;
     height: 100%;
@@ -21,7 +25,7 @@ html {
 
         .refExit {
             bottom: 2px;
-            right: 5px;
+            right: @padding;
             width: 43px;
             height: 10px;
             position: absolute;
@@ -40,6 +44,8 @@ html {
             border: solid 0.5px #808080;
             cursor: pointer;
             background: #4f758b;
+            background-image: url('../images/bg.svg');
+            background-size: cover;
 
 
 
@@ -52,25 +58,25 @@ html {
             #logo {
                 content: url(../images/logo_gilead.svg);
                 position: absolute;
-                left: 5px;
-                top: 5px;
-                width: 41px;
+                left: @padding;
+                top: @padding;
+                width: 70px;
             }
 
             #logo-epclusa {
                 content: url(../images/logo_epclusa.svg);
                 position: absolute;
-                right: 5px;
-                bottom: 3px;
-                width: 68px;
+                right: @padding;
+                bottom: @paddingbottom;
+                width: 109px;
             }
 
             #cta{
                 content: url('../images/cta.svg');
                 position: absolute;
                 right: 0;
-                top: 5px;
-                width: 87px;
+                top: @padding;
+                width: 132px;
             }
 
             .show {
@@ -86,62 +92,53 @@ html {
             #slides {
 
                 >div{
-                    position: absolute;
-                    left: 5px;
-                    bottom: 3px;
-                }
-
-                &:before {
-                    content: url('../images/question.svg');
-                    position: absolute;
-                    display: block;
-                    width: 18px;
-                    top: 1px;
-                    right: 100px;
                     opacity: 0;
-                    transition: opacity 500ms ease-in-out;
+                    position: absolute;
+                    left: @padding;
+                    bottom: @padding;
                 }
-                &.question{
-                    &::before{
-                        opacity: 1;
-                    }
+                >div:not(#footer1):not(#footer2){
+                    width: 300;
+                    height: 250px;
+                    top: 0;
+                    left: 0;
                 }
 
                 #frame1 {
-                    opacity: 0;
-                    width: 235px;
                     content: url(../images/frame1.svg);
                 }
 
                 #frame2 {
-                    opacity: 0;
-                    width: 226px;
                     content: url(../images/frame2.svg);
                 }
 
 
                 #frame3 {
-                    opacity: 0;
-                    width: 235px;
                     content: url(../images/frame3.svg);
                 }
 
                 #frame4 {
-                    opacity: 0;
-                    width: 235px;
                     content: url(../images/frame4.svg);
                 }
 
                 #frame5 {
-                    opacity: 0;
-                    width: 235px;
                     content: url(../images/frame5.svg);
                 }
 
-                #footer{
-                    opacity: 0;
-                    width: 235px;
-                    content: url('../images/shared-foot.svg');
+                #frame6 {
+                    content: url(../images/frame6.svg);
+                }
+
+                #footer1{
+                    width: 165px;
+                    bottom: @paddingbottom;
+                    content: url('../images/footer1.svg');
+                }
+
+                #footer2{
+                    width: 164px;
+                    bottom: @paddingbottom;
+                    content: url('../images/footer2.svg');
                 }
             }
 
@@ -151,7 +148,7 @@ html {
                     position: absolute;
                     left: 70px;
                     bottom: 3px;
-                    width: 55px;
+                    width: 5@padding;
                     content: url(../images/static/012021_mf-text.svg);
                 }
 
