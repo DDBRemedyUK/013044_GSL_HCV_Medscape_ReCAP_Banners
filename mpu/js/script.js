@@ -9,11 +9,11 @@ $(document).ready(function () {
             seconds = 0;
 
         var slides = {
-            frame1: 3,
+            frame1: 2,
             frame2: 3, //multiples of 0.2
             frame3: 3,
-            frame4: 4,
-            frame5: 3,
+            frame4: 3,
+            frame5: 4,
             frame6: 0
         }
 
