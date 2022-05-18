@@ -1,0 +1,166 @@
+//variables
+@padding: 10px;
+@paddingbottom: 5px;
+
+html {
+    width: 100%;
+    height: 100%;
+
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        background-color: transparent;
+
+
+
+        .piExit {
+            bottom: 2px;
+            right: 53px;
+            width: 8px;
+            height: 10px;
+            position: absolute;
+            z-index: 100;
+        }
+
+        .refExit {
+            bottom: 2px;
+            right: @padding;
+            width: 43px;
+            height: 10px;
+            position: absolute;
+            z-index: 100;
+        }
+
+        #banner {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 728px;
+            height: 90px;
+            display: block;
+            overflow: hidden;
+            box-sizing: border-box;
+            border: solid 0.5px #808080;
+            cursor: pointer;
+            background: #4f758b;
+            background-image: url('../images/bg.svg');
+            background-size: cover;
+
+
+
+            .bgExit {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+            }
+
+            #logo {
+                content: url(../images/logo_gilead.svg);
+                position: absolute;
+                left: @padding;
+                top: @padding;
+                width: 78px;
+            }
+
+            #logo-epclusa {
+                content: url(../images/logo_epclusa.svg);
+                position: absolute;
+                right: @padding;
+                bottom: @paddingbottom;
+                width: 109px;
+            }
+
+            #cta{
+                content: url('../images/cta.svg');
+                position: absolute;
+                right: 0;
+                top: @padding;
+                width: 132px;
+            }
+
+            .show {
+                opacity: 1 !important;
+                transition: opacity 2s ease-in-out 250ms;
+            }
+
+            .hide {
+                opacity: 0 !important;
+                transition: opacity 500ms ease-in-out;
+            }
+
+            #slides {
+
+                >div{
+                    opacity: 0;
+                    position: absolute;
+                    left: @padding;
+                    bottom: @padding;
+                }
+                >div:not(#footer1):not(#footer2){
+                    width: 245px;
+                    height: 90px;
+                    top: 0;
+                    left: 0;
+                }
+
+                #frame1 {
+                    content: url(../images/frame1.svg);
+                }
+
+                #frame2 {
+                    content: url(../images/frame2.svg);
+                }
+
+
+                #frame3 {
+                    content: url(../images/frame3.svg);
+                }
+
+                #frame4 {
+                    content: url(../images/frame4.svg);
+                }
+
+                #frame5 {
+                    content: url(../images/frame5.svg);
+                }
+
+                #frame6 {
+                    content: url(../images/frame6.svg);
+                }
+
+                #footer1{
+                    width: 165px;
+                    bottom: @paddingbottom;
+                    content: url('../images/footer1.svg');
+                }
+
+                #footer2{
+                    width: 164px;
+                    bottom: @paddingbottom;
+                    content: url('../images/footer2.svg');
+                }
+            }
+
+            #text {
+                #text1 {
+                    opacity: 0;
+                    position: absolute;
+                    left: 70px;
+                    bottom: 3px;
+                    width: 5@padding;
+                    content: url(../images/static/012021_mf-text.svg);
+                }
+
+                #text2 {
+                    opacity: 0;
+                    position: absolute;
+                    right: 90px;
+                    top: 8px;
+                    width: 80px;
+                    content: url(../images/static/novartis.svg);
+                }
+            }
+        }
+    }
+}
