@@ -24,6 +24,12 @@ $(document).ready(function () {
             if (seconds == 0) {
                 let frame = "#frame" + (slide + 1);
 
+                if (frame === "#frame3") {
+                    $("#footer").addClass('show');
+                } 
+                if (frame === "#frame4") {
+                    $("#slides").removeClass('question');
+                } 
                 if (frame === "#frame5") {
                     $("#logo-epclusa").addClass('hide');
                 }

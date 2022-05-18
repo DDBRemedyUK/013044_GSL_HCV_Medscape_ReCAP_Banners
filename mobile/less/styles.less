@@ -91,6 +91,22 @@ html {
                     bottom: 3px;
                 }
 
+                &:before {
+                    content: url('../images/question.svg');
+                    position: absolute;
+                    display: block;
+                    width: 18px;
+                    top: 1px;
+                    right: 100px;
+                    opacity: 0;
+                    transition: opacity 500ms ease-in-out;
+                }
+                &.question{
+                    &::before{
+                        opacity: 1;
+                    }
+                }
+
                 #frame1 {
                     opacity: 0;
                     width: 235px;
@@ -120,6 +136,12 @@ html {
                     opacity: 0;
                     width: 235px;
                     content: url(../images/frame5.svg);
+                }
+
+                #footer{
+                    opacity: 0;
+                    width: 235px;
+                    content: url('../images/shared-foot.svg');
                 }
             }
 
