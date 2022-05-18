@@ -66,9 +66,9 @@ html {
             #logo-epclusa {
                 content: url(../images/logo_epclusa.svg);
                 position: absolute;
-                right: @padding;
+                left: @padding;
                 bottom: @paddingbottom;
-                width: 109px;
+                width: 123px;
             }
 
             #cta{
@@ -76,7 +76,7 @@ html {
                 position: absolute;
                 right: 0;
                 top: @padding;
-                width: 132px;
+                width: 142px;
             }
 
             .show {
@@ -94,14 +94,14 @@ html {
                 >div{
                     opacity: 0;
                     position: absolute;
-                    left: @padding;
+                    right: @padding;
                     bottom: @padding;
                 }
-                >div:not(#footer1):not(#footer2){
-                    width: 245px;
+                >div:not(#footer1):not(#footer2):not(#footer){
+                    width: 346px;
                     height: 90px;
                     top: 0;
-                    left: 0;
+                    left: 150px;
                 }
 
                 #frame1 {
@@ -125,12 +125,15 @@ html {
                     content: url(../images/frame5.svg);
                 }
 
-                #frame6 {
-                    content: url(../images/frame6.svg);
+                #footer{
+                    opacity: 1;
+                    width: 164px;
+                    bottom: @paddingbottom;
+                    content: url('../images/shared-foot.svg'); 
                 }
 
                 #footer1{
-                    width: 165px;
+                    width: 144px;
                     bottom: @paddingbottom;
                     content: url('../images/footer1.svg');
                 }

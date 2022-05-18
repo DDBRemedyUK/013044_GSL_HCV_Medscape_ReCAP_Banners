@@ -5,14 +5,15 @@ $(document).ready(function () {
         idleTime = 0,
             idleInterval = setInterval(timerIncrement, 200),
             slide = 1,
-            slideTotal = 4,
+            slideTotal = 5,
             seconds = 0;
 
         var slides = {
             frame1: 2,
             frame2: 3, //multiples of 0.2
             frame3: 3,
-            frame4: 0
+            frame4: 4,
+            frame5: 0
         }
 
         //Increment the idle time counter every 3 seconds.
@@ -24,15 +25,15 @@ $(document).ready(function () {
 
                 console.log(frame);
 
-                if(frame === "#frame5"){
-                    $("#frame5").prevAll().addClass("hide");
+                if(frame === "#frame4"){
+                    $("#frame4").prevAll().addClass("hide");
                     $("#frame" + (slide + 1)).addClass("show");
                     $("#footer1").addClass("hide");
                     $("#footer2").addClass("show");
                 } 
-                if(frame === "#frame6"){
-                    $("#frame5").addClass("hide");
-                    $("#frame6").addClass("show");
+                if(frame === "#frame5"){
+                    $("#frame4").addClass("hide");
+                    $("#frame5").addClass("show");
                 }
                 $("#frame" + (slide + 1)).addClass("show");
 
