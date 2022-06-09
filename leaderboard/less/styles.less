@@ -71,7 +71,7 @@ html {
                 width: 123px;
             }
 
-            #cta{
+            #cta {
                 content: url('../images/cta.svg');
                 position: absolute;
                 right: 0;
@@ -91,13 +91,14 @@ html {
 
             #slides {
 
-                >div{
+                >div {
                     opacity: 0;
                     position: absolute;
                     right: @padding;
                     bottom: @padding;
                 }
-                >div:not(#footer1):not(#footer2):not(#footer){
+
+                >div:not(#footer1):not(#footer2):not(#footer) {
                     width: 346px;
                     height: 90px;
                     top: 0;
@@ -125,20 +126,20 @@ html {
                     content: url(../images/frame5.svg);
                 }
 
-                #footer{
+                #footer {
                     opacity: 1;
                     width: 164px;
                     bottom: @paddingbottom;
-                    content: url('../images/shared-foot.svg'); 
+                    content: url('../images/shared-foot.svg');
                 }
 
-                #footer1{
+                #footer1 {
                     width: 144px;
                     bottom: @paddingbottom;
                     content: url('../images/footer1.svg');
                 }
 
-                #footer2{
+                #footer2 {
                     width: 164px;
                     bottom: @paddingbottom;
                     content: url('../images/footer2.svg');
