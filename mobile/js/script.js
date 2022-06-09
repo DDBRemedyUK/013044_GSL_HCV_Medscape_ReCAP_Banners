@@ -23,15 +23,19 @@ $(document).ready(function () {
             console.log(seconds);
             if (seconds == 0) {
                 let frame = "#frame" + (slide + 1);
-
+                if (frame === "#frame2") {
+                    $("#footer").addClass('hide');
+                }
                 if (frame === "#frame3") {
+                    $("#footer").removeClass('hide');
                     $("#footer").addClass('show');
-                } 
+                }
                 if (frame === "#frame4") {
                     $("#slides").removeClass('question');
-                } 
+                }
                 if (frame === "#frame5") {
                     $("#logo-epclusa").addClass('hide');
+                    $("#job-no").addClass('show');
                 }
                 $("#frame" + (slide + 1)).prev().addClass("hide");
                 $("#frame" + (slide + 1)).addClass("show");
